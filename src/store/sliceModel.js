@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 import _ from 'lodash';
-import init_modelSlice from './initStateModel';
+import init_modelSlice from './initialStateModel'
 import * as edge from './redEdge'
 const modelSlice = createSlice({
     name: "model",

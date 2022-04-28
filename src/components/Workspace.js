@@ -3,8 +3,8 @@ import { Container, Row, Col } from 'react-bootstrap'
 import { useDispatch } from 'react-redux'
 import usePouchDb from '../customHooks/usePouchDb'
 import { removeHangingLine } from '../store/sliceModel'
-import ModelBar from './BarModel/ModelBar'
-import TopBar from './BarTop/TopBar'
+// import ModelBar from './BarModel/ModelBar'
+// import TopBar from './BarTop/TopBar'
 import DrawingSpace from './Canvas/DrawingSpace'
 
 
@@ -27,8 +27,8 @@ const Workspace = () => {
 
     return (
         <Container fluid className='p-0' tabIndex={0} onKeyDown={e => handleKeyDown(e)}>
-            <TopBar />
-            <ModelBar />
+            {/* <TopBar />
+            <ModelBar /> */}
             <DrawingSpace />
         </Container>
     )

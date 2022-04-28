@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
-import modelReducer from './modelSlice';
-import drawSpaceReducer from './drawSpaceSlice';
+import modelReducer from './sliceModel';
+import drawSpaceReducer from './sliceDrawSpace';
 
 export default configureStore({
     reducer: {

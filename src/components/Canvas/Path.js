@@ -1,10 +1,10 @@
 import React, { memo } from 'react'
 import { Line } from 'react-konva';
 import { useSelector } from 'react-redux'
-import { getNode, getPath } from '../../store/modelSlice'
+import { getNode, getPath } from '../../store/sliceModel'
 
 const Path = ({ pathKey }) => {
-    console.log(pathKey)
+
     const path = useSelector(state => getPath(state, pathKey));
     const nodes = path.connectedNodes;
     const startNode = useSelector(state => getNode(state, nodes[0]));

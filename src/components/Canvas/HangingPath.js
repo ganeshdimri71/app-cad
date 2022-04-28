@@ -1,7 +1,7 @@
 import React, { memo } from 'react'
 import { Line } from 'react-konva';
 import { useSelector } from 'react-redux';
-import { getFloatingNode, getNode } from '../../store/modelSlice';
+import { getFloatingNode, getNode } from '../../store/sliceModel';
 
 const HangingPath = ({ path }) => {
     const startNode = useSelector(state => getNode(state, path[1][0]));

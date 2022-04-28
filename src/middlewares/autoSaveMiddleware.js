@@ -1,5 +1,5 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import { updateModifiedTime, updateModelId, updateModel, updateModelsData, setActiveModelKey, updateSavingStatus } from "../store/modelSlice";
+import { updateModifiedTime, updateModelId, updateModel, updateModelsData, setActiveModelKey, updateSavingStatus } from "../store/sliceModel";
 import { localDB } from "../customHooks/usePouchDb";
 
 
